@@ -1,0 +1,5 @@
+Role	power	finesse	bulk	mana	speed	luck
+Fighter	1	1	1	0	0	0
+Wizard	0	0	0	3	0	0
+Tank	1	0	2	0	0	0
+Theif	0	0	0	0	1	2

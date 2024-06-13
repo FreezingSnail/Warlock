@@ -8,14 +8,12 @@
 # python3 tools/convert-sprite.py ../fxdata/generated/images -s 4 -o ../fxdata/generated/
 # cat fxdata/generated/images/string_images.txt >>fxdata/generated/Sprites.txt
 
-# # Genreate FX data 
-# python3 tools/moveGenerator.py --csv_path data/movesheet.csv > fxdata/generated/movedata.txt
-
-# echo "Generating opponent data"
-# python3 tools/data_converters/opponent_data.py --format c
-# python3 tools/data_converters/opponent_data.py --format fx
-
-# python3 tools/data_converters/type_table_data.py --format fx
+# # Genreate FX data
+python3 tools/data_converters/races.py data/races.csv   
+python3 tools/data_converters/armors.py data/helments.csv helments 
+python3 tools/data_converters/armors.py data/armor.csv armors
+python3 tools/data_converters/roles.py data/roles.csv  
+python3 tools/data_converters/weapons.py data/weapons.csv  
 
 
 #cp -r images fxdata/

@@ -1,3 +1,7 @@
-
+raw_t race_stats_table = "generated/races.bin"
+raw_t role_stats_table = "generated/roles.bin"
+raw_t weapons_stats_table = "generated/weapons.bin"
+raw_t armors_stats_table = "generated/armors.bin"
+raw_t helments_stats_table = "generated/helments.bin"
 
 

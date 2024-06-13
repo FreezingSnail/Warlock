@@ -6,6 +6,11 @@ using uint24_t = __uint24;
 
 // Initialize FX hardware using  FX::begin(FX_DATA_PAGE); in the setup() function.
 
-constexpr uint16_t FX_DATA_PAGE  = 0x10000;
-constexpr uint24_t FX_DATA_BYTES = 0;
+constexpr uint16_t FX_DATA_PAGE  = 0xffff;
+constexpr uint24_t FX_DATA_BYTES = 247;
 
+constexpr uint24_t race_stats_table = 0x000000;
+constexpr uint24_t role_stats_table = 0x00007E;
+constexpr uint24_t weapons_stats_table = 0x000096;
+constexpr uint24_t armors_stats_table = 0x0000C6;
+constexpr uint24_t helments_stats_table = 0x0000E2;

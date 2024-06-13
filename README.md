@@ -1,2 +1,2 @@
-# CreatureGathererFX
-Creature collecting demake game for the arduboy
+# Warlock
+Wizardry Inspired demake for Arduboy

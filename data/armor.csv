@@ -1,0 +1,5 @@
+Armor	ID	ap	effect	power	finesse	bulk	mana	luck	speed
+leather	0	1	NONE	0	0	0	0	0	0
+mail	1	2	NONE	0	0	0	0	0	0
+iron	2	3	NONE	0	0	0	0	0	0
+Robe	3	1	NONE	0	0	0	1	0	0
