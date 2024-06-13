@@ -7,7 +7,7 @@ enum Role {
     Theif,
 };
 
-constexpr uint16_t ClassDie(Role role) {
+static uint16_t ClassDie(Role role) {
     switch (role) {
     case Role::Fighter:
     case Role::Tank:
@@ -17,4 +17,4 @@ constexpr uint16_t ClassDie(Role role) {
     default:
         return 0;
     }
-}
+};

@@ -8,14 +8,14 @@ struct Helment {
     uint8_t id;
     uint8_t armorPoint;
     Effect effect;
-    Stats modifier;
+    StatModifier modifier;
 };
 
 struct Armor {
     uint8_t id;
     uint8_t armorPoint;
     Effect effect;
-    Stats modifier;
+    StatModifier modifier;
 };
 
 struct DamageClass {
@@ -30,7 +30,7 @@ struct Weapon {
     uint8_t armorPoint;
     AttackType type;
     DamageClass damageClass;
-    Stats modifier;
+    StatModifier modifier;
 };
 
 struct EquipmentSlots {

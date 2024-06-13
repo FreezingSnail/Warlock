@@ -25,7 +25,7 @@ enum Race {
     LICH,
 };
 
-constexpr uint8_t HealthFactor(Race race) {
+static uint8_t HealthFactor(Race race) {
     uint8_t factor = 0;
     switch (race) {
     case HUMAN:
@@ -94,4 +94,4 @@ constexpr uint8_t HealthFactor(Race race) {
     }
 
     return factor;
-}
+};

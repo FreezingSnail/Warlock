@@ -20,7 +20,7 @@ class Entity {
     void LoadEnemy(uint8_t id);
 
     void InitialMaxHealth();
-    void LevelUp();
+    void LevelUp(StatModifier statChanges);
 
     uint8_t UpdateHealth(uint8_t damage);
     uint8_t GetArmorPoints();
