@@ -4,4 +4,6 @@ raw_t weapons_stats_table = "generated/weapons.bin"
 raw_t armors_stats_table = "generated/armors.bin"
 raw_t helments_stats_table = "generated/helments.bin"
 
+image_t torch = "../images/torch_16x16.png"
+image_t tiles = "../images/tiles_32x32.png"
 

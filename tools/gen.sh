@@ -17,9 +17,9 @@ python3 tools/data_converters/weapons.py data/weapons.csv
 
 
 #cp -r images fxdata/
-python3 Arduboy-Python-Utilities/fxdata-build.py fxdata/fxdata.txt
+#python3 Arduboy-Python-Utilities/fxdata-build.py fxdata/fxdata.txt
 #rm -rf fxdata/images
-mv fxdata/fxdata.h src/fxdata.h
-mv fxdata/fxdata.bin dist
-mv fxdata/fxdata-data.bin dist
-rm -rf fxdata/generated/images
+cd fxdata && ardugotools fxdata generate fxdata.lua      
+mv fxdata/fxdata.h ../src/fxdata.h
+mv fxdata/release/fxdata.bin ../dist
+rm -rf fxdata/
