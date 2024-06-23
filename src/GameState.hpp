@@ -6,7 +6,6 @@
 class GameState {
   public:
     Entity party[4];
-    Entity Opponents[3];
 
     GameState();
 };

@@ -2,7 +2,7 @@
 
 using uint24_t = __uint24;
 
-// Generated with ardugotools on 2024-06-19T19:59:35-04:00
+// Generated with ardugotools on 2024-06-23T15:06:22-04:00
 
 constexpr uint24_t race_stats_table = 0x000000;
 constexpr uint24_t role_stats_table = 0x00007E;
@@ -19,13 +19,13 @@ constexpr uint16_t torchHeight = 16;
 constexpr uint24_t tilesheet       = 0x00017B;
 constexpr uint8_t  tilesheetFrames = 9;
 constexpr uint24_t test_dungeon = 0x000787;
-constexpr uint24_t test_dungeon_offsets = 0x00080B;
-constexpr uint24_t test_dungeon_raycast = 0x00080F;
-constexpr uint24_t test_dungeon_raycast_offsets = 0x000893;
+constexpr uint24_t test_dungeon_offsets = 0x0055AF;
+constexpr uint24_t test_dungeon_raycast = 0x0055B3;
+constexpr uint24_t test_dungeon_raycast_offsets = 0x00A3DB;
 
 // FX addresses (only really used for initialization)
-constexpr uint16_t FX_DATA_PAGE = 0xFFF7;
-constexpr uint24_t FX_DATA_BYTES = 2199;
+constexpr uint16_t FX_DATA_PAGE = 0xFF5C;
+constexpr uint24_t FX_DATA_BYTES = 41951;
 
 // Helper macro to initialize fx, call in setup()
 #define FX_INIT() FX::begin(FX_DATA_PAGE)

@@ -1,6 +1,7 @@
 #pragma once
 
-enum Role {
+enum class Role {
+    None,
     Fighter,
     Wizard,
     Tank,

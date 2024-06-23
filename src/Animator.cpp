@@ -25,8 +25,9 @@ void Animator::play() {
 
     if (!playing)
         return;
-    SpritesU::drawPlusMaskFX(animationStack[stackPointer].xOrigin, animationStack[stackPointer].yOrigin, animationStack[stackPointer].data,
-                             FRAME(currentFrame));
+    // SpritesU::drawPlusMaskFX(animationStack[stackPointer].xOrigin, animationStack[stackPointer].yOrigin,
+    // animationStack[stackPointer].data,
+    //                        FRAME(currentFrame));
     if (ticker % 20 != 0) {
         return;
     }

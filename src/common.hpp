@@ -1,13 +1,5 @@
 #pragma once
 
-#include <stdint.h>
-
-#define ABG_TIMER1
-#define ABG_SYNC_PARK_ROW
-
-#include "external/ArduboyG.h"
-extern ArduboyGBase_Config<ABG_Mode::L4_Triplane> arduboy;
-
 #define SPRITESU_OVERWRITE
 #define SPRITESU_PLUSMASK
 #define SPRITESU_RECT
@@ -17,11 +9,10 @@ extern ArduboyGBase_Config<ABG_Mode::L4_Triplane> arduboy;
 #include "Animator.hpp"
 extern Animator animator;
 
-
 #define DGF __attribute__((optimize("-O0")))
 
-#define FRAME(x) x * 3 + arduboy.currentPlane()
-#include "fxdata.h"
+#define PARTY_SIZE 4
+
 // static void drawStatNumbers(uint8_t x, uint8_t y, uint8_t number) {
 //     uint8_t upper = number / 100;
 //     uint8_t lower = number % 100;
