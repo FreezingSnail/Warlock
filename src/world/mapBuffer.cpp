@@ -115,6 +115,11 @@ void MapBuffer::loadCell(uint8_t i, uint8_t j, int16_t x, int16_t y) {
     uint8_t offset = dataOffset >> 8;
     uint8_t integer = dataOffset & 0xFF;
 
+    if (x < 0 || y < 0 || x >= width || y >= height) {
+        this->buffer[map2Dto1D(i, j, BUFFER_WIDTH)] = 1;
+        return;
+    }
+
     // the index is a 16 bit width address but only 8bit width is allowed
     // need to convert 16 bit to 8 bit + offset
     // i.e. 256 -> 1,0 257 -> 1,1

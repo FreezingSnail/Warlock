@@ -95,6 +95,14 @@ void setup() {
     FX::setCursorRange(0, 32767);
 
     gameState = GameState();
+
+    uint32_t addr = FX::readIndexedUInt24(test_dungeon_pairs, 0);
+    Serial.print("addr: ");
+    Serial.print(uint32_t(addr));
+    Serial.print("\n");
+    Serial.print("addr: ");
+    Serial.print(uint32_t(test_dungeon_raycast));
+    Serial.print("\n");
     mapBuffer.initMap(test_dungeon_raycast);
 
     player.posX = CENTER_X + 0.5;
